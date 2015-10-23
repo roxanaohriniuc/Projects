@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %} {{ super() }}| Cool Topics {% endblock %}
+
+{% block orderedList %}
+        <li role="presentation" ><a href="/home">Home</a></li>
+        <li role="presentation"><a href="/about">About</a></li>
+        <li role="presentation" class="active"><a href="/post">Post</a></li>
+{{super()}} 
+{% endblock%}
+
+{% block subtitle %}  <h2>Recent Posts <h2> {% endblock %}
+
+{% block content %} 
+<div class="posts">
+
+  <div class="enter-question">
+    <div class="grid-100"> 
+    </div>
+    <div>
+      <p>Hello! </p> 
+      <p> Here is a list of previous posts. Click one of the title to read a post.</p>
+      <ul class="blog_list">
+        <li class="list-group-item"> 
+          <div><a href="/post/Python"> Thoughts on Python </a></div>
+          {% if post and post.name == "Python"%}
+          <div> {{post.text}}</div> 
+          {% endif %}
+        </li>
+        <li class="list-group-item"> 
+          <div><a href="/post/About"> A (very) Short Blog About Me </a> </div>
+          {% if post and post.name == "About"%}
+          <div> {{post.text}}</div> 
+          {% endif %}
+        </li>
+        <li class="list-group-item"> 
+          <div><a href="/post/Projects">Long Term Project</a></div>
+          {% if post and post.name == "Projects"%}
+          <div> {{post.text}}</div> 
+          {% endif %}
+        </li>
+      </ul> 
+    </div>
+
+    </div>
+    <br></br>
+  </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+  {% extends "layout.html" %}
+ 
+        {% block title %} {{ super() }}| Roxana {% endblock %}
+
+        {% block orderedList %}
+        <li role="presentation" ><a href="/home">Home</a></li>
+        <li role="presentation" class="active"><a href="/about">About</a></li>
+        <li role="presentation"><a href="/post">Post</a></li>
+        {{super()}} 
+        {% endblock %}
+
+      {% block subtitle %} <h2> A little bit about yours truly...<h2> {% endblock %}
+
+        {% block content %} 
+              <div  class="aboutMe">
+                <p> Hello there! My name is Roxana, and if you didn`t figure it out yet, the ugly one in the picture above is me :D. </p><p>I am a Computer Science student at FAU  ***** GO OWLS!!!! ***** 
+                 My graduation date is December 10th but I will still be around campus after that as I am going to attempt a masters degree in the same field.</p>
+                <p> If you want to say hi, my email address is: rohriniuc2014@fau.edu </p>
+                <p> As for the field that I am in, I am learning as much as I can for now. I like to code with Java and C#. Python is not bad either... and I cannot wait to see what more there is out there. </p>
+                <p> Currently i have an internship with Emerson Network Company as a Software Engineer. I am enjoying my job so far. </p></div>
+        {% endblock %}
+            

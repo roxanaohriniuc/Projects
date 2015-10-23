@@ -1,0 +1,32 @@
+  {% extends "layout.html" %}
+ 
+        {% block title %} {{ super() }}| Useful Links {% endblock %}
+
+        {% block orderedList %}
+        <li role="presentation" class="active"><a href="/home">Home</a></li>
+        <li role="presentation"><a href="/about">About</a></li>
+        <li role="presentation"><a href="/post">Post</a></li>
+        {{super()}} 
+        {% endblock%}
+
+
+        {% block subtitle %}  <h2> Introduction <h2> {% endblock %}
+        {% block content %} 
+        <div class="homePage">
+            <ul >
+                <li style="list-style-type:none"> 
+                  <div class="titlePost"><p> Hello everyone! </p></div>
+                   <div class="introText"><p>I have created this website as part of an assignment for my Programming Languages class (COP5930). This webpage is created using Flask, a Python Language library. I have tried to make the page illustrate a little bit of who I am and what I like. Bellow, I will post some links to activities and cool things.
+                   </div>
+                </li>
+                <li class="list-group-item"><a href="http://paulocoelhoblog.com" target="_blank">Awesome guy's blog! </a></li> 
+                <li class="list-group-item"><a href="http://romaniatourism.com" target="_blank">Travel to where I am from</a></li>
+                <li class="list-group-item"><a href="http://referrals.trhou.se/roxanaohriniuc" target="_blank">Learn how to code </a></li>
+                <li class="list-group-item"><a href="https://db.tt/tc95zByH" target="_blank">Save and share files</a></li>
+                <li class="list-group-item"><a href="https://trello.com" target="_blank">Organize yourself</a></li>
+                <li class="list-group-item">TO BE CONTINUED!!!</li>
+            </ul> </div>
+        </div>
+      
+        {% endblock %}        
+          

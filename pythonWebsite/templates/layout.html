@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+   <html lang="en">
+     <head>
+        <title>{% block title %} Live like you mean it! {% endblock %}</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/customize.css">
+     </head>
+     <body>
+        <div class="row">
+          <br></br>
+          <div class="col-md-8 col-md-offset-2 panel panel-default">
+            <div class="panel-heading"> 
+             <div>
+              <ul class="nav nav-pills nav-justified">
+                {% block orderedList %} {% endblock %}
+              </ul>
+            </div>
+                <img src= {{ url_for('static', filename='roxy.jpg') }} alt="Roxana Ohriniuc" class="img-circle" style="width: 12.5em;height:16em;" >
+                <div class="pageName" ><i><em>
+                {% block pageName %}
+                <h1>Roxana Ohriniuc </h1> 
+                </i></em>  
+                <div class="subtitle">
+                  {% block subtitle %}
+                  {% endblock %}
+                </div>            
+                {% endblock %}
+                 </div>  
+
+            </div>
+            <div class="panel-body"> 
+              <div class="well">
+              {% block content %}{% endblock %} 
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+   </html>
