@@ -1,0 +1,116 @@
+
+/**************************************
+*  				LAYOUT.HTML			  *
+***************************************/
+body {
+	background-color: #CC66FF;
+	color: purple;
+	position: center;
+	background-image:url(white.jpg);
+
+}
+
+title{
+	background-color: purple;
+	color: white;
+}
+img {
+	position: relative;
+    float: left;
+    margin: 2em;
+}
+p {
+	text-indent : 1em;
+}
+
+ .panel {
+ 	background-color: beige;
+ }
+ .panel-heading {
+ 	position: relative;
+ 	padding-top: 2em;
+ 	padding-left: 0em;
+ 	padding-right: 0em;
+ 	background-color: beige;
+
+ }
+.panel-body{
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+#inputButton{
+	position: relative; 
+	top: 0.3em; 
+	left: 90%;
+}
+.pageName {
+	padding-left: 50%;
+	color: #CC66FF;
+	font-size: 2.5em;
+	font: bold, italic;
+}
+.subtitle{
+	padding-left: 30%;
+	color: #CC66FF;
+	font-size: 1em;
+	font: bold, italic;
+}
+
+.nav-pills {
+	position: relative;
+	float: left;
+	background-color: white;
+  	font-family: 'Oswald', sans-serif;
+  	font-size: 1.5em;
+ }
+
+.nav > li, 
+.nav > li > a{
+  background-color: beige;
+  color: #CC66FF;
+}
+
+.nav > li.active > a,
+.nav > li.active > a:focus,
+.nav > li.active > a:hover,
+.nav > li > a:focus,
+.nav > li > a:hover {
+	background-color: #CC66FF;
+	color:white;
+}
+
+
+/**************************************
+*  				POST.HTML			  *
+***************************************/
+.img-rounded {
+	width: 12em;
+	height: 9em;
+	float: right;
+	position: relative;
+	padding-bottom: 2em;
+
+}
+ul {
+	overflow: hidden;
+
+}
+/**************************************
+*  				HOME.HTML			  *
+***************************************/
+.list-group {
+	position: relative;
+	float: left;
+	padding-top: 2em;
+
+}
+.posts, .homePage, .aboutMe{
+	background-image: url(Flower-Pink-Background.jpg);
+	background-size: 50em;
+}
+
+.pageName{
+	background-image: url() 
+}
+
